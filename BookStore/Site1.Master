@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="BookStore.Site1"%>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+    body {
+	font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	background: #ffffff;
+}
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 712px;
+            height: 270px;
+        }
+        .auto-style5 {
+            width: 331px;
+            height: 270px;
+        }
+        #table1 {            
+        border:3px solid #bbb;
+        }
+        .auto-style5 {
+            width: 213px;
+            height: 270px;
+        }
+       
+.Menu ul
+{  
+    /*background:#7795BD;*/
+}
+
+.Menu ul li
+{
+    background:#7795BD url(menu_bg.gif) repeat-x;
+    text-align:center;
+    /* set width if needed.*/
+    width:200px;
+}
+
+.Menu ul li a
+{
+    color: black;
+    padding: 4px 2px 4px;
+    padding-left:8px !important;
+    border:1px solid #648ABD;
+    border-bottom: 0;
+}
+
+.Menu ul li a:hover
+{
+    background-image: none;
+}
+
+.Menu ul li a:hover
+{
+    color: White;
+}
+
+.Menu ul li a
+{
+    color: Black;
+}
+    </style>
+       
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="margin-top: 20px">
+        <h1 style="color: Red"> &nbsp;&nbsp; Book Store
+        </h1>   
+        </div>
+        <div>  
+        <table>
+            <tr valign="top">
+                <td class="auto-style5">
+                    <br />
+                    <br />
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="Menu">
+
+        <Items>
+            <asp:MenuItem NavigateUrl="~/BookStoreForm.aspx" Text="Home" Value="New Item">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/ShoppingCart.aspx" Text="Shopping cart" Value="New Item">
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/CheckOrder.aspx" Text="Checkout" Value="New Item">
+            </asp:MenuItem>
+        </Items>
+                        </asp:Menu>
+                    </td>
+                <td class="auto-style2">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >        
+                   </asp:ContentPlaceHolder>  
+                </td> 
+                          
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
