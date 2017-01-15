@@ -1,0 +1,27 @@
+Book Store användarmanual
+
+Introduktion
+Välkommen som användare av Book Store. Denna manual ger dig en introduktion till systemets grundfunktion i webbaserade form.
+
+Huvudmeny
+Till vänster i huvudmenyn syns olika alternativ ”Home”, ”Shopping Cart” och ”Checkout” som i sin tur beroende på vilken
+alternativ du väljer öppnar respektive webbsidor. Den översta ”Home” alternativ navigerar alltid till startsidan.
+”Shopping Cart” navigerar till vy som visar kundvagninnehåll och ”Checkout” navigerar till Ordervyn. 
+
+Book Store Start vy
+Start vy visar produktlista med produkt information som Book titel, författare och pris. 
+Knappen ”Add to cart” lägger till produkt i kundvagn. Överst i vyn har man möjlighet att söka i produktlistan 
+genom att välja sökmotorn ”Title” eller ”Author” och sedan i sökboxen ange nyckel bokstav eller ord som du vill söka på.
+Tryck på ”Enter” tangent ger produktlistan där antigen titel eller författare börjar med angiven texten från 
+sökboxen beroende på vad man har valt som sökmotorn. Startvärde i sökmotorn är ”Alla” som alltid visar den hela produktlistan. 
+
+Shopping Cart vy
+Till kundvagn vyn kommer du genom att välja ”Shopping Cart” i huvudmenyn. I vyn visas produktlista och antal 
+produkter som vi har lagt i kundvagnen genom att trycka ”Add to cart” i startvyn. Om antal produkter är större än 
+ett kan du alltid minska antal genom att trycka på den runda knappen med ”X” i mitten som ligger på varje produktrad 
+till höger. Alternativt ta bort produkten från kundvagnen om antal produkt i kundvagnen är lika med ett.
+
+Order vy
+Till Order vyn kommer du genom att välja ”Ckeckout” i huvudmenyn. I vyn visas det slutliga köp beroende på produkt lagerstatus. Om någon produkt lagerstatus är mindre än antal produkt i kundvagnen kommer den automatiskt automatisk att minska antal till lagersaldo respektive att tas bort från order om produkten finns inte i lager. Du får meddelande om ändringar i order förekommer
+
+
